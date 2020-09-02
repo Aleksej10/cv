@@ -20,6 +20,26 @@ body {
     align-items: center;
 }
 
+a{
+    text-decoration: none;
+} 
+
+a:link {
+    color: #3b5998;
+}
+
+a:visited {
+    color: #3b5998;
+}
+
+a:hover {
+    color: magenta;
+}
+
+a:active {
+    color: #3b5998;
+}
+
 
 .vertical{
     position: relative;
@@ -207,23 +227,7 @@ img{
 }
 
 .rs{ margin-bottom: 0; }
-.rst{ margin-top: 2.1vmin; }
+.rst{ margin-top: 2.6vmin; }
 .rss{ margin-top: 1.1vmin; }
-.h-40{ height: 40%; }
-.h-36{ height: 36%; }
-.h-35{ height: 35%; }
-.h-32{ height: 32%; }
-.h-30{ height: 30%; }
-.h-25{ height: 25%; }
-.h-22{ height: 22%; }
-.h-20{ height: 20%; }
-.h-18{ height: 18%; }
-.h-15{ height: 15%; }
-.h-12{ height: 12%; }
-.h-11{ height: 11%; }
-.h-10{ height: 10%; }
-.h-8{ height: 8%; }
-.h-7{ height: 7%; }
-.h-6{ height: 6%; }
 
 
