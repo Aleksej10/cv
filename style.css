@@ -3,6 +3,10 @@
                  -0.5vmin -0.5vmin 1vmin #dddddd;
     --accent-color: #3b5998;
     /* --accent-color: #0078ff; */
+    --height: 90vmin;
+    --width: calc(var(--height)/1.414);
+    --p-margin: calc(var(--height)/264.705);
+    --a4-margin-top: calc(calc(100vmin - var(--height)) / 2);
 }
 
 @viewport {
@@ -23,8 +27,7 @@ body {
 }
 
 p{
-    margin-top: 0.34vmin;
-    margin-bottom: 0.34vmin;
+    margin: var(--p-margin) 0 var(--p-margin) 0
 }
 
 a{
@@ -33,21 +36,10 @@ a{
     transition: color 0.2s;
 } 
 
-a:link {
-    color: var(--accent-color);
-}
-
-a:visited {
-    color: var(--accent-color);
-}
-
-a:hover {
-    color: magenta;
-}
-
-a:active {
-    color: var(--accent-color);
-}
+a:link      { color: var(--accent-color); }
+a:visited   { color: var(--accent-color); }
+a:hover     { color: magenta; }
+a:active    { color: var(--accent-color); }
 
 
 .vertical{
@@ -63,8 +55,8 @@ a:active {
 }
 
 .paper-a4{
-	height: 90vmin;
-    width: 63.63vmin;
+	height: var(--height);
+    width: var(--width);
     margin: auto;
 	justify-content: left;
 	align-items: left;
@@ -72,7 +64,7 @@ a:active {
     padding: 2.5vmin;
 
     /* comment for print */
-    margin-top: 5vmin;
+    margin-top: var(--a4-margin-top);
     border-radius: 1vmin;
     box-shadow: var(--box-shadow);
 
