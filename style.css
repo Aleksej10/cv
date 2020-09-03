@@ -4,9 +4,22 @@
     --accent-color: #3b5998;
     /* --accent-color: #0078ff; */
     --height: 90vmin;
-    --width: calc(var(--height)/1.414);
+    --width: calc(var(--height)/1.4142135623730951);
     --p-margin: calc(var(--height)/264.705);
-    --a4-margin-top: calc(calc(100vmin - var(--height)) / 2);
+    --a4-margin-top: calc(var(--height)/18.0);
+    --a4-padding: calc(var(--height)/36.0);
+    --a4-radius: calc(var(--height)/90.0);
+    --padding-1: calc(var(--height)/90.0);
+    --header-left-padding: calc(var(--height)/180.0);
+    --right-div-left-padding: calc(var(--height)/45.0);
+    --github-padding: calc(var(--height)/360.0);
+    --name-font-size: calc(var(--height)/20.4545454545);
+    --emoji-font-size: calc(var(--height)/56.962025316);
+    --header-font-size: calc(var(--height)/47.368421052);
+    --project-name-font-size: calc(var(--height)/50.0);
+    --paragraph-font-size: calc(var(--height)/52.941176470588);
+    --footer-font-size: calc(var(--height)/56.962025316455694);
+    --footer-padding: calc(var(--height)/112.5);
 }
 
 @viewport {
@@ -61,27 +74,27 @@ a:active    { color: var(--accent-color); }
 	justify-content: left;
 	align-items: left;
     background: white;
-    padding: 2.5vmin;
+    padding: var(--a4-padding);
 
     /* comment for print */
     margin-top: var(--a4-margin-top);
-    border-radius: 1vmin;
+    border-radius: var(--a4-radius);
     box-shadow: var(--box-shadow);
 
 }
 
 .header-div{
     height: 20%;
-    padding: 1vmin;
-    padding-left: 0.5vmin;
+    padding: var(--padding-1);
+    padding-left: var(--header-left-padding);
 }
 
 .body-div{
-    padding: 1vmin;
+    padding: var(--padding-1);
 }
 
 .footer-div{
-    padding: 1vmin;
+    padding: var(--footer-padding);
 }
 
 img{
@@ -94,8 +107,9 @@ img{
 
 .right-div{
     width: 55%;
-    padding-left: 2vmin;
+    padding-left: var(--right-div-left-padding);
 }
+
 
 .left-div{
     width: 45%;
@@ -108,25 +122,25 @@ img{
 
 .github{
     display: flex;
-    padding: 0.15vmin;
+    padding: var(--github-padding);
     width: 16%;
 }
 
 .info-div{
-    padding: 1vmin;
+    padding: var(--padding-1);
 }
 
 .name-div{
     height: 50%;
-    padding: 1vmin;
+    padding: var(--padding-1);
 	justify-content: center;
 	align-items: center;
-    margin-top: 2.6vmin;
+    margin-top: 6%;
 }
 
 .contact-div{
     height: 10%;
-    padding: 1vmin;
+    padding: var(--padding-1);
 	justify-content: center;
 	align-items: center;
 }
@@ -142,10 +156,10 @@ img{
 .body-p{
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 	justify-content: left;
-	align-items: center;
-    margin-bottom: 1vmin;
+	align-items: left;
+    margin-bottom: calc(var(--padding-1)/2);
 }
 
 .project-name-div{
@@ -154,11 +168,9 @@ img{
     flex-direction: row;
 	justify-content: left;
 	align-items: center;
-    margin-top: 0.5vmin;
 }
 
 .project-link-div{
-    height: 2.6%;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -169,53 +181,47 @@ img{
 .name-p{
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 600;
-    font-size: 4.4vmin;
+    font-size: var(--name-font-size);
     color: var(--accent-color);
 }
 
 .emoji{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 1.58vmin;
+    font-size: var(--emoji-font-size);
 }
 
 .text-h{
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 600;
-    font-size: 1.9vmin;
+    font-size: var(--header-font-size);
     color: var(--accent-color);
 }
 
 .project-name{
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: 1.8vmin;
+    font-size: var(--project-name-font-size);
     color: var(--accent-color);
-}
-
-.project-link{
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    font-weight: 100;
-    font-size: 1.7vmin;
-    color: black;
 }
 
 .text-b{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 1.7vmin;
+    font-size: var(--paragraph-font-size);
     color: black;
 }
 
 .text-f{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 1.55vmin;
+    font-size: var(--footer-font-size);
     color: var(--accent-color);
+    color: black;
 }
 
-.rs{ margin-bottom: 0; }
-.rst{ margin-top: 3.5vmin; }
-
+.last{
+    position: absolute;
+    bottom: 0;
+}
 
