@@ -2,9 +2,6 @@
     --box-shadow: 0.5vmin  0.5vmin 1vmin #aaaaaa,
                  -0.5vmin -0.5vmin 1vmin #dddddd;
     --accent-color: #3b5998;
-    /* --accent-color: #0078ff; */
-    /* --height: 90vmin; */
-    /* --width: calc(var(--height)/1.4142135623730951); */
     --width: 63.63961030678927vmin;
     --height: calc(var(--width)*1.4142135623730951);
     --p-margin: calc(var(--height)/264.705);
@@ -28,12 +25,14 @@
 @media screen and (orientation: portrait){
     :root{
         --width: 90vmin;
+        --accent-color: #0078ff;
     }
 }
 
 @media screen and (orientation: landscape){
     :root{
         --width: 63.63961030678927vmin;
+        --accent-color: #3b5998;
     }
 }
 
