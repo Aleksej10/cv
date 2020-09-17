@@ -1,0 +1,12 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+Hej, <br/>
+Ja sam Strahinja, student Matematičkog fakulteta u Beogradu, završna godina. <br/>
+Više o meni možete pogledati u CV-ju, koji takođe možete naći <a href="https://aleksej10.github.io/cv">ovde </a>, gde ćete moći da pratite linkove.
+
+</body>
+</html>
