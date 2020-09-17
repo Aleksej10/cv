@@ -24,7 +24,8 @@
 @media screen and (orientation: portrait){
     :root{
         --width: 90vmin;
-        --accent-color: #0084ff
+        --accent-color: #0084ff;
+        --a4-radius: calc(var(--height)/30.0);
     }
 }
 
@@ -32,6 +33,7 @@
     :root{
         --width: 63.63961030678927vmin;
         --accent-color: #3b5998;
+        --a4-radius: calc(var(--height)/90.0);
     }
 }
 
