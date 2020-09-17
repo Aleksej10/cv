@@ -24,14 +24,14 @@
 @media screen and (orientation: portrait){
     :root{
         --width: 90vmin;
-        /* --accent-color: #0078ff; */
+        --accent-color: #0084ff
     }
 }
 
 @media screen and (orientation: landscape){
     :root{
         --width: 63.63961030678927vmin;
-        /* --accent-color: #3b5998; */
+        --accent-color: #3b5998;
     }
 }
 
